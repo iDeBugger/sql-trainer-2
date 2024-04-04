@@ -241,7 +241,7 @@ export const tasksList: Task[] = [
     topic: "join",
     database: "music",
     referenceSql:
-      "SELECT tracks.name, albums.title FROM albums JOIN tracks ON tracks.album_id = albums.id;",
+      "SELECT albums.title, tracks.name FROM albums JOIN tracks ON tracks.album_id = albums.id;",
     tables: ["tracks", "albums"],
   },
   // Join ordered
